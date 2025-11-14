@@ -39,6 +39,6 @@
         <TextBlock Grid.Row="7" Grid.Column="1" Text="Повторите пароль"/>
         <PasswordBox Grid.Row="7" Grid.Column="2" x:Name="SecPassPB"/>
  
-        <Button Grid.Row="9" Grid.Column="2" Content="Войти" Name="LoginBtn"/>
+        <Button Grid.Row="9" Grid.Column="2" Content="Создать аккаунт" Name="CreateBtn"/>
     </Grid>
 </Window>
