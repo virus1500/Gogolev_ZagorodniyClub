@@ -34,9 +34,9 @@
         <TextBlock Grid.Row="5" Grid.Column="1" Text="Пароль"/>
         <PasswordBox Grid.Row="5" Grid.Column="2" x:Name="PassPB"/>
 
-        <Button Grid.Row="7" Grid.Column="2" Content="Войти" Name="LoginBtn"/>
+        <Button Grid.Row="7" Grid.Column="2" Content="Войти" Name="LoginBtn" Click="LoginBtn_Click"/>
 
-        <Button Grid.Row="7" Grid.Column="1" Content="Нет аккаунта?" Name="NoAccBtn"/>
+        <Button Grid.Row="7" Grid.Column="1" Content="Нет аккаунта?" Name="NoAccBtn" Click="NoAccBtn_Click"/>
 
     </Grid>
 </Window>

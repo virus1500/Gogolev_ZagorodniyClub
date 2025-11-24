@@ -23,5 +23,19 @@ namespace Gogolev_ZagorodniyClub.View.Windows
         {
             InitializeComponent();
         }
+
+        private void NoAccBtn_Click(object sender, RoutedEventArgs e)
+        {
+            CreateAcc createAcc = new CreateAcc();
+            createAcc.ShowDialog();
+            this.Close();
+        }
+
+        private void LoginBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.ShowDialog();
+            this.Close();
+        }
     }
 }
