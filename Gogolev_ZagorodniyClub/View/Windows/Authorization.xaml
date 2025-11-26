@@ -5,38 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gogolev_ZagorodniyClub.View.Windows"
         mc:Ignorable="d"
-        Title="Authorization" Height="450" Width="800">
+        Title="Authorization" Height="400" Width="600">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20" />
             <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="5" />
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="20" />
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
-            <RowDefinition Height="1*" />
             <RowDefinition Height="20" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="20" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="20" />
             <RowDefinition Height="1*" />
-            <RowDefinition Height="50" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="20" />
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Text="Загородный клуб Осень"/>
+        <TextBlock FontSize="20" Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Text="Загородный клуб Осень"/>
 
         <TextBlock Grid.Row="3" Grid.Column="1" Text="Логин"/>
-        <TextBox Grid.Row="3" Grid.Column="2" x:Name="LoginTB" />
+        <TextBox Height="40" Grid.Row="3" Grid.Column="3" x:Name="LoginTB" />
 
         <TextBlock Grid.Row="5" Grid.Column="1" Text="Пароль"/>
-        <PasswordBox Grid.Row="5" Grid.Column="2" x:Name="PassPB"/>
+        <PasswordBox Height="40" Grid.Row="5" Grid.Column="3" x:Name="PassPB"/>
 
-        <Button Grid.Row="7" Grid.Column="2" Content="Войти" Name="LoginBtn" Click="LoginBtn_Click"/>
+        <Button Margin="0 0 1 0" Height="40" Grid.Row="7" Grid.Column="1" Content="Нет аккаунта?" Name="NoAccBtn" Click="NoAccBtn_Click"/>
 
-        <Button Grid.Row="7" Grid.Column="1" Content="Нет аккаунта?" Name="NoAccBtn" Click="NoAccBtn_Click"/>
+        <Button Margin="0 0 1 0" Height="40" Grid.Row="7" Grid.Column="3" Content="Войти" Name="LoginBtn" Click="LoginBtn_Click"/>
 
     </Grid>
 </Window>

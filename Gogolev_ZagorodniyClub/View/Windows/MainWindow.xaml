@@ -7,20 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="FloralWhite">
+        
+        <!--refrence="https://wh-collection.ru/"-->
+        
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="5" />
             <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="5" />
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="10" />
+            <RowDefinition Height="5" />
             <RowDefinition Height="100" />
             <RowDefinition Height="5" />
             <RowDefinition Height="1*" />
-            <RowDefinition Height="10" />
+            <RowDefinition Height="5" />
         </Grid.RowDefinitions>
-
+        <!--Кнопки-->
         <Grid Background="Bisque" Grid.Column="1" Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="5" />
@@ -42,16 +45,16 @@
                 <RowDefinition Height="7" />
             </Grid.RowDefinitions>
 
-            <Button Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="5" Content="Найти номер"/>
+            <Button Margin="0 0 1 0" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="5" Content="Найти номер"/>
 
             <ComboBox Grid.Row="1" Height="30" Grid.Column="1" x:Name="CahngeCmb"/>
             <DatePicker VerticalAlignment="Center" BorderBrush="Transparent" Grid.Row="1" Grid.Column="3" x:Name="ArrivalDP"/>
             <DatePicker VerticalAlignment="Center" BorderBrush="Transparent" Grid.Row="1" Grid.Column="5" x:Name="DepartureDP"/>
-            
-            <Button Content="somerhing" Height="35" Grid.Row="1" Grid.Column="7" x:Name="PeopleBtn"/>
+
+            <Button Margin="0 0 1 0" Content="somerhing" Height="35" Grid.Row="1" Grid.Column="7" x:Name="PeopleBtn"/>
             
         </Grid>
-        
+        <!--Мейн-->
         <Grid Background="Beige" Grid.Column="1" Grid.Row="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="5" />
@@ -64,6 +67,10 @@
                 <RowDefinition Height="1*" />
                 <RowDefinition Height="5" />
             </Grid.RowDefinitions>
+
+            <ListBox Grid.Row="1" Grid.Column="1">
+                
+            </ListBox>
             
         </Grid>
         
